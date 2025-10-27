@@ -38,10 +38,16 @@ function playRound(humanSelection, computerSelection){
 
 var humanScore = 0;
 var computerScore = 0;
+for (let i =0; i < 5; i++)
+{
+  let humanSelection = getHumanChoice();
+  let computerSelection = getComputerChoice();
+  playRound(humanSelection, computerSelection);
+
+}
 const humanSelection = getHumanChoice();
 const computerSelection = getComputerChoice();
-console.log('c ',computerSelection);
-console.log('h',humanSelection);
+
 
 
 playRound(humanSelection, computerSelection);
