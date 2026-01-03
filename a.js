@@ -1,5 +1,16 @@
-console.log("Hello world")
+//  -------------------------------- seleccionamos los botones
+let btnRock = document.querySelector("#rock")
+let btnPaper = document.querySelector("#paper")
+let btnSiccors = document.querySelector("#siccors")
 
+function handleClick(e){
+    console.log("it was clicked!", e.target.textContent);
+}
+
+
+btnRock.addEventListener("click", handleClick);
+btnPaper.addEventListener("click", handleClick);
+btnSiccors.addEventListener("click", handleClick);
 
 function getComputerChoice(){
   const answer = ['rock', 'paper', 'scissors'];
@@ -8,7 +19,6 @@ function getComputerChoice(){
 }
 
 function getHumanChoice(){
-  let play = prompt("Choose your move  ROCK, PAPER OR SCISSORS");
   play = play.toLocaleLowerCase();
   if (play !== "rock" && play !== "paper" && play!== "scissors" ){
     console.log("jugada invalida:(");
@@ -38,13 +48,7 @@ function playRound(humanSelection, computerSelection){
 
 var humanScore = 0;
 var computerScore = 0;
-for (let i =0; i < 5; i++)
-{
-  let humanSelection = getHumanChoice();
-  let computerSelection = getComputerChoice();
-  playRound(humanSelection, computerSelection);
 
-}
 const humanSelection = getHumanChoice();
 const computerSelection = getComputerChoice();
 
