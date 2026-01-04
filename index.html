@@ -1,26 +1,30 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <title>Document</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="style.css" />
+  <title>Rock Paper Scissors</title>
 </head>
 <body>
-    <div class="buttonsOrganization">
-        
-        <button id="rock" data-value="rock">Rock</button>
-        <button id="paper" data-value="paper">Paper</button>
-        <button id="siccors" data-value="scissors">Siccors</button>
 
-        
+  <main class="game">
+
+    <div class="buttons">
+      <button id="rock" data-value="rock">✊ Rock</button>
+      <button id="paper" data-value="paper">📄 Paper</button>
+      <button id="siccors" data-value="scissors">✂️ Scissors</button>
     </div>
-    
-    <div class="displayResult">
-        
-        
+
+    <div class="result">
+      <p class="message"></p>
+      <p id="score"></p>
     </div>
-    
-    <script src="a.js"></script>
+
+    <button id="reset">Reset</button>
+
+  </main>
+
+  <script src="a.js"></script>
 </body>
 </html>
